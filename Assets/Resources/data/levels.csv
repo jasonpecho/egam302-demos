@@ -1,0 +1,11 @@
+LevelName,Difficulty,EnemyCount,TimeLimitSeconds,Unlocked
+Tutorial Grove,1,3,120,true
+Whispering Woods,1,4,100,true
+Sunken Ruins,2,8,180,true
+Windswept Cliffs,2,6,150,true
+Crystal Caverns,3,10,220,false
+Frostpeak Pass,3,12,240,false
+Ember Wastes,4,15,200,false
+Molten Core,5,25,360,false
+Shadow Keep,5,20,300,false
+The Abyss,5,30,400,false

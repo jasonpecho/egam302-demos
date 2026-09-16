@@ -1,0 +1,9 @@
+{
+  "playerName": "Jay",
+  "level": 44,
+  "health": 100,
+  "isAlive": true,
+  "position": { "x": 2.0, "y": 0.0, "z": 102.0 },
+  "inventory": ["bow", "chestplate", "bandages"],
+  "stats": [50, 45]
+}

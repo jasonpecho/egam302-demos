@@ -1,0 +1,9 @@
+{
+  "playerName": "Aria",
+  "level": 12,
+  "health": 87.5,
+  "isAlive": true,
+  "position": { "x": 10.5, "y": 0.0, "z": -3.2 },
+  "inventory": ["sword", "shield", "potion"],
+  "stats": [10, 20, 5]
+}
