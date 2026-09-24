@@ -19,9 +19,10 @@ public class PlayerData
     public Vector3Data position;   // nested object — fine
     public string[] inventory;     // array as a field — fine
     public int[] stats;            // fine
+    public int spattack = -1;
 
     public override string ToString()
     {
-        return $"PlayerData: {playerName}, {level}, {health}, {isAlive}, {position.ToString()}, {string.Join(", ", inventory)}, {string.Join(", ", stats)}";
+        return $"PlayerData: {playerName}, {level}, {health}, {isAlive}, {position.ToString()}, {string.Join(", ", inventory)}, {string.Join(", ", stats)}, {string.Join(", ", spattack)}";
     }
 }
