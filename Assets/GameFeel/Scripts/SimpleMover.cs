@@ -18,7 +18,14 @@ public class SimpleMover : MonoBehaviour
 
     void Update()
     {
-        Vector3 move = new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")).normalized * speed;
+        Vector3 move = Vector3.ClampMagnitude(new Vector3(Input.GetAxisRaw("Horizontal"), 0f, Input.GetAxisRaw("Vertical")), 1.0f) * speed;
+
+        Camera mainCam = Camera.main;
+
+        //move = (mainCam.transform.right * move.x) + (mainCam.transform.forward * move.z);
+        //move = mainCam.transform.rotation * move;
+        //move = mainCam.transform.TransformDirection(move);
+        move = Quaternion.Euler(0f,mainCam.transform.eulerAngles.y,0f) * move;
 
         if (controller.isGrounded)
         {
